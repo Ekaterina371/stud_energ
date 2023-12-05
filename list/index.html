@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>Student Self-Care and Effective Study Checklist</title>
+   
+       
+    
+</head>
+<div class="loader-container" id="loader">
+    <div class="loader"></div>
+</div>
+<body>
+
+ 
+
+
+    <header>
+        <nav>
+            <div id="logo" class="logo">
+                <a href="../index.html"><img src="Logo1.png"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navItem">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../quiz/index.html">Quiz</a></li>
+                <li><a href="../list/index.html">Checklist</a></li>
+            </ul>
+        </nav>
+        <h1>Student Self-Care and Effective Study Checklist</h1>
+    </header>
+
+    <section>
+        <h2 onclick="toggleSubpoints(this)">General Well-being:</h2>
+        <ol>
+            <li>
+                <label>Sleep Hygiene:</label>
+                <ul>
+                    <li>Aim for 7-9 hours of sleep per night.</li>
+                    <li>Maintain a consistent sleep schedule.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Nutrition:</label>
+                <ul>
+                    <li>Eat a balanced diet with fruits, vegetables, and whole grains.</li>
+                    <li>Stay hydrated by drinking enough water throughout the day.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Physical Activity:</label>
+                <ul>
+                    <li>Incorporate regular exercise into your routine.</li>
+                    <li>Take short breaks for stretching during study sessions.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Stress Management:</label>
+                <ul>
+                    <li>Practice mindfulness or meditation.</li>
+                    <li>Identify stressors and develop coping strategies.</li>
+                </ul>
+            </li>
+        
+        </ol>
+
+        <h2 onclick="toggleSubpoints(this)">Study Environment:</h2>
+        <ol>
+            <li>
+                <label>Organized Workspace:</label>
+                <ul>
+                    <li>Keep your study area clutter-free and organized.</li>
+                    <li>Have all necessary materials within reach.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Distraction-Free Zone:</label>
+                <ul>
+                    <li>Minimize distractions such as social media and notifications.</li>
+                    <li>Consider using productivity apps if needed.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Comfortable Seating:</label>
+                <ul>
+                    <li>Use an ergonomic chair and maintain good posture.</li>
+                    <li>Take breaks to avoid prolonged sitting.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2 onclick="toggleSubpoints(this)">Study Techniques:</h2>
+        <ol>
+            <li>
+                <label>Effective Time Management:</label>
+                <ul>
+                    <li>Create a study schedule and stick to it.</li>
+                    <li>Break down tasks into smaller, manageable steps.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Active Learning:</label>
+                <ul>
+                    <li>Engage with the material actively (e.g., take notes, ask questions).</li>
+                    <li>Utilize various study techniques like flashcards or mind maps.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Self-Assessment:</label>
+                <ul>
+                    <li>Regularly evaluate your understanding of the material.</li>
+                    <li>Seek help when needed, whether from peers, teachers, or online resources.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2 onclick="toggleSubpoints(this)"> Bonus: Energized Scholar Quiz Results</h2>
+        <ol>
+            <li>
+                <label>Reflect on Results:</label>
+                <ul>
+                    <li>Review your quiz results and identify your variation.</li>
+                    <li>Consider the recommended strategies for your energy level.</li>
+                </ul>
+            </li>
+            <li>
+                <label>Adjust Strategies:</label>
+                <ul>
+                    <li>Tailor your self-care and study techniques based on your quiz variation.</li>
+                    <li>Experiment with additional strategies that align with your needs.</li>
+                </ul>
+            </li>
+        </ol>
+        <p> Remember, self-care and effective study habits go hand-in-hand. Adjustments may be needed over time, so regularly revisit and update your approach to suit your evolving needs.</p>
+        
+    </section>
+    <p class="we">@Creators of this website are Nevdah A., Erofeenko K. </p>
+    <script>
+        function toggleSubpoints(element) {
+            const ul = element.nextElementSibling;
+            ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="new.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            var loader = document.getElementById("loader");
+            loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="st.css">
+        <title>Quiz</title>
+    </head>
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+<body>
+    <header>
+        <div id="logo" class="logo">
+            <a href="../index.html"><img src="Logo1.png"></a>
+        </div>
+    
+        <nav>
+    
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navItem">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../quiz/index.html">Quiz</a></li>
+                <li><a href="../list/index.html">Checklist</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="quiz-wrapper">
+        <div class="quiz-box" id="quiz">
+            <div class="question-count">
+                <p class="count">
+                    <span id="count-question"></span>/<strong id="tol-num-que"></strong>
+                </p>
+                <p class="question-title">Question</p>
+            </div>
+            <div class="question-box">
+                <span id="question-number"></span>
+                <p id="question"></p>
+            </div>
+            <div class="answers-box">
+                <div class="box">
+                    <div class="answer-number">A</div>
+                    <input type="radio" name="option" id="first" value="a" required hidden>
+                    <label for="first" class="answer-lable">Testing 1</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">B</div>
+                    <input type="radio" name="option" id="second" value="b" required hidden>
+                    <label for="second" class="answer-lable">Testing 2</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">C</div>
+                    <input type="radio" name="option" id="third" value="c" required hidden>
+                    <label for="third" class="answer-lable">Testing 3</label>
+                </div>
+
+            </div>
+
+            <div class="button-box">
+                <button type="button" class="next-btn button" id="next-question-btn">Next Question</button>
+                <button type="button" class="next-btn button submite-btn" id="submite">Submite Now</button>
+            </div>
+        </div>
+
+
+
+        <div class="result-show" id="result">
+            <h3 id="score">Questions Answered</h3>
+            <div class="result-gif" id="resultGif">
+                <img id="resultGifImg" alt="Result GIF">
+            </div>
+            <div class="button-box">
+                <button class="button" onclick="location.reload();">Reload</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <p class="we">@Creators of this website are Nevdah A., Erofeenko K. </p>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="new.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            var loader = document.getElementById("loader");
+            loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>
