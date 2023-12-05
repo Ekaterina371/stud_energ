@@ -286,7 +286,7 @@ header {
 }
 .menu-toggle {
     margin-top: 10%;
-    margin-left: 120%;
+    margin-left: 108%;
 }
 
 nav {
@@ -310,6 +310,7 @@ nav {
     margin: 0 3px;
     text-align: center;
     background:#6c42ff;
+    padding: 0 3px;
     z-index: 1;
 }
 
